@@ -1,0 +1,1362 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Pamparay";
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Pamparay";
+    src: url(/font/Pamparay.otf);
+}
+@font-face{
+    font-family: "Shred";
+    src: url(/font/Shred.ttf);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: yellow;
+    transition: 0.2s;
+    transition-delay: 0.1s;
+}
+body{
+    background-color: rgb(20, 20, 20);
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+}
+header p{
+    font-size: 4rem;
+    margin: 2vw;
+    color: white;
+    font-family: "Shred";
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+header li{
+    padding: 2vw;
+}
+.home-banner{
+    height: 100vh;
+    background-image: url(/image/Home-banner.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+.home-banner p{
+    color: white;
+    font-size: 3.5rem;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 2vh;
+}
+.home-banner .button{
+    color: white;
+    margin: 2vh;
+    font-size: 3rem;
+    padding: 1.2rem;
+    background-color: black;
+    border-radius: 999px;
+}
+.funfact-container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.funfact-container table{
+    color: white;
+}
+.funfact-container .td-text{
+    font-size: 1.7rem;
+    padding: 1vw;
+    width: 25vh;
+    text-align: center;
+}
+.funfact-container tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 98vw;
+}
+.funfact-container td{
+   margin: 0 4vw;
+}
+.funfact-container img{
+    height: 25vh;
+}
+.funfact-container p{
+    color: white;
+    font-size: 3.7rem;
+    margin-bottom: 7vh;
+}
+.content-banner{
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+#tutorial-banner{
+    flex-direction: row-reverse;
+}
+#tutorial-banner img{
+    margin: 0 10vw;
+    height: 100%;
+}
+#tutorial-banner .content-banner-desc{
+    text-align: right;
+    align-items: end;
+}
+.content-img{
+    height: 100%;
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#plans{
+    background-image: url(/image/Plans-banner.png);
+}
+#tutorial{
+    background-image: url(/image/Tutorial-banner.png);
+}
+#recipe{
+    background-image: url(/image/Recipe-banner.png);
+}
+.content-banner-desc{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1vw;
+}
+.content-banner h1{
+    color: white;
+    font-size: 2.5rem;
+    margin: 0.5vw 0;
+}
+.content-banner p{
+    color: white;
+    font-size: 1.6rem;
+    margin: 0.5vw 0;
+}
+.content-banner .button{
+    color: black;
+    width: 130px;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 0.5vw 0;
+}
+.tutorial-banner{
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+#chest-banner{
+    background-image: url(/image/chest-banner.png);
+}
+#back-banner{
+    background-image: url(/image/back-banner.jpg);
+}
+#shoulder-banner{
+    background-image: url(/image/shoulder-banner.jpg);
+}
+#leg-banner{
+    background-image: url(/image/leg-banner.jpg);
+}
+.tutorial-banner p{
+    color: white;
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+}
+.tutorial-text{
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.tutorial-title{
+    width: 30%;
+    margin: 0 3vw;
+    color: white;
+    font-size: 2rem;
+    border-bottom: 5px solid white;
+}
+.tutorial-container{
+    height: 120vh;
+}
+.tutorial-container tr{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.tutorial-container table{
+    margin-top: 9vh;
+    width: 100%;
+}
+.tutorial-container table img{
+    width: 8vw;
+    height: 8vw;
+    background-color: white;
+}
+.tutorial-container td{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 10vw;
+    cursor: pointer;
+}
+.tutorial-desc-container{
+    margin: 10vh 3vw;
+    height: 50%;
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+}
+#backBTN, #nextBTN{
+    height: 5vh;
+    cursor: pointer;
+}
+.tutorial-scroll{
+    display: flex;    
+    overflow-x: scroll; 
+    align-items: center;
+}
+.tutorial-scroll div{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tutorial-scroll p{
+    width: 40vw;
+    font-size: 1.5rem;
+    margin: 5vw;
+}
+.tutorial-scroll ol{
+    width: 45vw;
+    font-size: 1.2rem;
+    margin-left: 6vw;
+
+}
+.tutorial-scroll img{
+    width: 26vw;
+    height: 35vh;
+    margin: 7vw;
+
+}
+.tutorial-scroll iframe{
+    width: 35vw;
+    margin: 5vw;
+}
+.tutorial-scroll::-webkit-scrollbar{
+    display: none;
+}
+#tutorial-content-2{
+    display: none;
+}
+#tutorial-content-3{
+    display: none;
+}
+#tutorial-content-4{
+    display: none;
+}
+
+.tutorial-icon-1{
+    text-decoration: underline;
+}
+
+td:hover p{
+    text-decoration: underline;
+}
+
+.tutorials-banner{
+    background-image: url(/image/tutorials-banner.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.tutorials-banner p{
+    width: 40%;
+    color: white;
+    font-size: 2rem;
+    margin: 5vw;
+}
+.tutorials-text {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tutorials-text p{
+    color: white;
+    padding: 2vh 0;
+    margin: 0 2vw;
+    font-size: 2rem;
+    border-bottom: white solid 2px;
+}
+.tutorials-container{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tutorials-container .tutorial-img{
+    width: 80%;
+    height: 22%;
+    background-position: center;
+    background-size: cover;
+    font-size: 4rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.filter{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.filter:hover{
+    background-color: rgb(0, 0, 0, 0.7);
+    opacity: 1;
+    transition: ease-in-out .2s;
+}
+
+#chest-tutorials{
+    background-image: url(/image/chest-tutorials.jpg);
+}
+#back-tutorials{
+    background-image: url(/image/back-tutorials.jpg);
+}
+#shoulder-tutorials{
+    background-image: url(/image/shoulder-tutorials.jpg);
+}
+#leg-tutorials{
+    background-image: url(/image/leg-tutorials.webp);
+}
+
+.recipe-banner{
+    height: 50vh;
+    background-image: url(/image/cover_menu_recipe.jpg);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+.recipe-banner p{
+    color: white;
+    width: 60%;
+    font-size: 2.5rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+}
+.recipe-text{
+    height: 10%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 2.5rem;
+    border-bottom: 5px solid white; 
+    
+}
+
+.recipe-container{
+    height: 285vh;    
+}
+
+.recipe-container-item{
+    margin: 5%;
+    height: 25%;
+    border: 5px solid white;
+    background-position: center;
+    font-size: 2rem;
+    color: white;
+    background-size: cover;
+}
+#bulking_menu{
+    background-image: url(/image/menu_bulking.jpg);
+}
+#cutting_menu{
+    background-image: url(/image/menu_cutting.png);
+}
+#maintain_menu{
+    background-image: url(/image/menu_maintain.png);
+}
+.recipe-filter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recipe-filter:hover{
+    background-color: rgb(0, 0, 0, 0.7);
+    transition: ease-in-out .2s;
+}
+.recipe-filter:hover p{
+    text-decoration: underline;
+}
+.recipe-filter h1{
+    margin: 2vw;
+}
+.recipe-def {
+    margin: 2vw;
+    display: flex;
+    align-items: end;
+}
+
+.cutting-banner{
+    height: 60vh;
+    background-image: url(/image/cutting_cover.jpg);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+.cutting-banner p{
+    color: white;
+    width: 30%;
+    height: 20%;
+    font-size: 5rem;
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+.cutting-container{
+    height: 360vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cutting-text{
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 2.5rem;
+    border-bottom: 5px solid white; 
+        
+}
+.food-container{
+    margin: 0 3vw;
+    height: 60vh;
+    border: 5px solid white;
+    display: flex;
+    color: white;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    padding-top: 40px;
+    padding-left: 40px;
+
+}
+
+.left-cutting{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-cutting iframe{
+    height: 90%;
+    width: 100%;
+    margin-top: -4vh;
+}
+
+.food-image{
+    height: 80%;
+    width: 100%;
+}
+
+.right-cutting{
+    padding-left: 8%;
+    padding-right: 5%;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top-cutting{
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+.food-def{
+    font-size: 1.3rem;
+    padding-top: 5%;
+}
+
+h3{
+    padding-top: 5%;
+    padding-bottom: 5%
+}
+
+.bulking-banner{
+    height: 60vh;
+    background-image: url(/image/bulking_cover.jpg);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+.bulking-banner p{
+    color: white;
+    width: 30%;
+    height: 20%;
+    font-size: 4.5rem;
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+.bulking-container{
+    height: 360vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bulking-text{
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 2.5rem;
+    border-bottom: 5px solid white; 
+        
+}
+.maintain-banner{
+    height: 60vh;
+    background-image: url(/image/maintain_cover.jpg);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+.maintain-banner p{
+    color: white;
+    width: 30%;
+    height: 20%;
+    font-size: 5rem;
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+.maintain-container{
+    height: 360vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.maintain-text{
+    
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 2.5rem;
+    border-bottom: 5px solid white; 
+        
+}
+.plans-ban {
+    height: 60vh;
+    background-image: url(/image/plansb.png);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+  
+.plans-ban p {
+    color: white;
+    font-size: 2.5rem;
+    width: 50%;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 2vh;
+}
+.content-banner1 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-banner1 p{
+    text-align: center;
+    font-size: 3rem;
+}
+.content-banner1 img{
+    width: 45%;
+    height: 55%;
+}
+
+.content-banner1 a{
+    padding: 1vw 0;
+    border-bottom: white solid 3px;
+    width: 30%;
+}
+
+.plans-title{
+    font-size: 3rem;
+    color: white;
+    height: 12vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.plan-banner{
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan-banner p{
+    width: 50%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#cbum-banner{
+    background-image: url(/image/cbum-banner.jpg);
+}
+#ronnie-banner{
+    background-image: url(/image/ronniebanner.png);
+}
+#arnold-banner{
+    background-image: url(/image/arnoldbanner.png);
+}
+.plan-content{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan-content img{
+    height: 80%;
+    width: 15%;
+}
+.plan-calendar{
+    height: 80%;
+    width: 45%;
+}
+.days-calendar{
+    display: flex;
+    height: 15%;
+}
+.days-calendar li{
+    color: white;
+    width: 10%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    cursor: pointer;
+    transition: ease .1s;
+    transition-delay: .1s;
+}
+#rest{
+    background-color: rgb(215, 3, 3);
+    color: white;
+}
+.calendar-container{
+    width: 100%;
+    height: 84%;
+    border: white 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.calendar-container p{
+    color: white;
+    width: 90%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.calendar-container ol{
+    width: 90%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#day1{
+    background-color: white;
+    color: black;
+}
+#day2-container{
+    display: none;
+}
+#day3-container{
+    display: none;
+}
+#day4-container{
+    display: none;
+}
+#day5-container{
+    display: none;
+}
+#day6-container{
+    display: none;
+}
+#day7-container{
+    display: none;
+}
+
+footer{
+    color: white;
+    height: 10vh;
+    font-size: 2.5rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shred";
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 7px 30px;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger-menu-container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: right;
+}
+.hamburger-menu{
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    right: -100%;
+    transition: 0.6s;
+    top: 10vh;
+}
+#hamburger-button{
+    width: 100%;
+    height: 25%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    transition: 0.6s;
+    font-size: 1.75rem;
+}
+#hamburger-button:hover{
+    text-decoration: underline 2px;
+    transition: ease-in-out;
+}
+#hamburger-button-focus{
+    width: 100%;
+    height: 25%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    transition: 0.6s;
+    font-size: 20px;
+    text-decoration: underline 2px;
+}
+
+@media screen and (max-width: 1440px) {
+    .home-banner p{
+        font-size: 3.5rem;
+    }
+    .home-banner .button{
+        font-size: 3rem;
+    }
+    .funfact-container .td-text{
+        font-size: 1.8rem;
+    }
+    .content-banner-desc h1{
+        font-size: 2.5rem;
+    }
+    .content-banner-desc p{
+        font-size: 1.8rem;
+    }
+    .content-banner-desc .button{
+        font-size: 1.7rem;
+        width: 140px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .home-banner p{
+        font-size: 3rem;
+    }
+    .home-banner .button{
+        font-size: 2.5rem;
+    }
+    .funfact-container p{
+        font-size: 2.8rem;
+    }
+    .funfact-container .td-text{
+        font-size: 1.5rem;
+    }
+    .content-banner-desc p{
+        font-size: 1.7rem;
+    }
+    .content-banner-desc .button{
+        font-size: 1.5rem;
+        width: 125px;
+    }
+    .content-banner1 a{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    header ul{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        width: 40px;
+        transform: translateY(17px); rotate: calc(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        width: 40px;
+        transform: translateY(-17px); rotate: calc(-45deg);
+    }
+    .hamburger-menu.active{
+        right: 0;
+    }
+    .funfact-container img{
+        height: 17vw;
+    }
+    .funfact-container{
+        height: 50vh;
+    }
+    .content-banner{
+        height: 60vh;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content-img{
+        height: 50%;
+        width: 100%;
+    }
+    .content-banner-desc{
+        width: 95%;
+        margin: 0 2.5%;
+        height: 50%;
+        justify-content: center;
+    }
+    #tutorial-banner{
+        height: 60vh;
+        flex-direction: column;
+        width: 100%;
+    }
+    .plans-ban p{
+        font-size: 2rem;
+    }
+    .content-banner1 img{
+        width: 100%;
+    }
+    .content-banner1 p{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .content-banner1 a{
+        width: 70%;
+    }
+    .tutorials-banner{
+        height: 60vh;
+    }
+    .tutorials-banner p{
+        font-size: 1.7rem;
+    }
+    .tutorials-container{
+        height: 120vh;
+    }
+    .tutorials-container .filter{
+        font-size: 2rem;
+    }
+    .recipe-container{
+        height: 150vh;
+    }
+    .recipe-container-item h1{
+        font-size: 3rem;
+    }
+    .recipe-container-item p{
+        font-size: 1.7rem;
+    }
+    .plan-calendar{
+        width: 60%;
+    }
+    .plan-content img{
+        width: 30%;
+    }
+    .plan-content{
+        height: 50vh;
+    }
+    .plans-title{
+        font-size: 2.5rem;
+        height: 10vh;
+    }
+    .plan-banner{
+        height: 60vh;
+    }
+    .plan-banner p{
+        width: 70%;
+    }
+    .tutorial-banner{
+        height: 40vh;
+    }
+    .tutorial-banner p{
+        width: 70%;
+    }
+    .tutorial-text{
+        height: 15vh;
+    }
+    .tutorial-container{
+        height: 80vh;
+    }
+    .tutorial-container table{
+        margin-top: 5vh;
+    }
+    .tutorial-container table img{
+        width: 15vw;
+        height: 15vw;
+    }
+    .tutorial-container td{
+        font-size: 1.5rem;
+        width: 15vw;
+    }
+    .tutorial-desc-container{
+        margin: 5vh 1vw;
+    }
+    #backBTN, #nextBTN{
+        height: 5vw;
+    }
+    .tutorial-scroll p{
+        width: 35vw;
+        font-size: 1.2rem;    
+    }
+    .tutorial-scroll ol{
+        width: 40vw;
+        font-size: 1rem;
+    }
+    .tutorial-scroll img{
+        width: 30vw;
+        height: 20vh;    
+    }
+    .tutorial-scroll iframe{
+        width: 35vw;
+        margin: 4vw;
+    }
+    .bulking-container{
+        height: 245vh;
+    }
+    .bulking-banner{
+        height: 50vh;
+    }
+    .bulking-banner p{
+        width: 50%;
+    }
+    .bulking-text{
+        height: 15vh;   
+    }
+    .maintain-container{
+        height: 245vh;
+    }
+    .maintain-banner{
+        height: 50vh;
+    }
+    .maintain-banner p{
+        width: 50%;
+    }
+    .maintain-text{
+        height: 15vh;   
+    }
+    .cutting-container{
+        height: 245vh;
+    }
+    .cutting-banner{
+        height: 50vh;
+    }
+    .cutting-banner p{
+        width: 50%;
+    }
+    .cutting-text{
+        height: 15vh;   
+    }
+    .food-container{
+        height: 40vh;
+    }
+    .food-container h2{
+        font-size: 2.5rem;
+    }
+    .food-def{
+        font-size: 1rem;
+    }
+@media screen and (max-width:620px){
+    .home-banner p{
+        width: 80%;
+    }
+    .home-banner .button{
+        font-size: 2rem;
+    }
+    .funfact-container .td-text{
+        font-size: 1.2rem;
+    }
+    .content-banner-desc p{
+        font-size: 1.5rem;
+    }
+    .content-banner-desc h1{
+        font-size: 2rem;
+    }
+    .content-banner-desc .button{
+        font-size: 1.2rem;
+        width: 100px;
+    }
+    header p{
+        font-size: 3rem;
+    }
+    .recipe-container-item{
+        margin: 7% 5%;
+    }
+    .recipe-container-item h1{
+        font-size: 2.5rem;
+    }
+    .recipe-container-item p{
+        font-size: 1.5rem;
+    }
+    .calendar-container p{
+        font-size: 1.7rem;
+    }
+    .calendar-container ol{
+        font-size: 1rem;
+    }
+    .tutorial-scroll p{
+        font-size: 1rem;    
+    }
+    .tutorial-scroll ol{
+        width: 40vw;
+        font-size: 0.9rem;
+    }
+    .tutorial-scroll img{
+        height: 15vh;
+        margin: 0 5vw;
+    }
+    .tutorial-scroll iframe{
+        height: 40vw;
+    }
+    .food-container h2{
+        font-size: 2rem;
+    }
+    .food-def{
+        font-size: 0.9rem;
+    }
+    .bulking-banner{
+        height: 40vh;
+    }
+    .bulking-banner p{
+        font-size: 3.5rem;
+    }
+    .maintain-banner{
+        height: 40vh;
+    }
+    .maintain-banner p{
+        font-size: 3.5rem;
+    }
+    .cutting-banner{
+        height: 40vh;
+    }
+    .cutting-banner p{
+        font-size: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width:420px){
+    .home-banner p{
+        width: 80%;
+        font-size: 2rem;
+    }
+    .home-banner .button{
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+    .funfact-container p{
+        font-size: 1.8rem;
+    }
+    .funfact-container img{
+        height: 19vw;
+    }
+    .funfact-container .td-text{
+        font-size: 0.9rem;
+        padding: 0vw;
+    }
+    .content-banner-desc p{
+        font-size: 1.2rem;
+    }
+    .content-banner-desc h1{
+        font-size: 1.5rem;
+    }
+    .content-banner-desc .button{
+        font-size: 1rem;
+        width: 90px;
+    }
+    .plans-ban p{
+        font-size: 1.7rem;
+        width: 80%;
+    }
+    .content-banner1{
+        height: 60vh;
+    }
+    .content-banner1 p{
+        font-size: 1.7rem;
+    }
+    .content-banner1 img{
+        height: 45%;
+    }
+    .tutorials-banner{
+        height: 50vh;
+    }
+    .tutorials-banner p{
+        font-size: 1.1rem;
+        width: 50%;
+    }
+    .tutorials-text p{
+        font-size: 1.5rem;
+    }
+    .tutorials-container{
+        height: 100vh;
+    }
+    .tutorials-container .filter{
+        font-size: 1.7rem;
+    }
+    .recipe-banner p{
+        font-size: 1.7rem;
+    }
+    .recipe-text{
+        font-size: 1.7rem;
+    }
+    .recipe-container-item{
+        margin: 9% 0;
+    }
+    .recipe-container-item h1{
+        font-size: 2rem;
+    }
+    .recipe-container-item p{
+        font-size: 1rem;
+    }
+    .plan-banner{
+        height: 50vh;
+    }
+    .plan-banner p{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .plans-title{
+        font-size: 1.7rem;
+    }
+    .plan-calendar{
+        width: 90%;
+    }
+    .plan-content img{
+        display: none;
+    }
+    .plan-content{
+        height: 50vh;
+    }
+    .days-calendar li{
+        font-size: 1.5rem;
+    }
+    .calendar-container p{
+        font-size: 1.2rem;
+    }
+    .calendar-container ol{
+        font-size: 0.9rem;
+    }
+    .tutorial-banner p{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .tutorial-text{
+        font-size: 1.5rem;
+    }
+    .tutorial-title{
+        font-size: 1.5rem;
+    }
+    .tutorial-container{
+        height: 80vh;
+    }
+    .tutorial-container table{
+        margin-top: 5vh;
+    }
+    .tutorial-container table img{
+        width: 15vw;
+        height: 15vw;
+    }
+    .tutorial-container td{
+        font-size: 0.8rem;
+        width: 15vw;
+    }
+    .tutorial-desc-container{
+        margin: 4vh 0;
+    }
+    .tutorial-scroll p{
+        width: 80vw;
+        font-size: 1rem;  
+        margin: 0 5vw;
+    }
+    .tutorial-scroll ol{
+        width: 80vw;
+        font-size: 0.8rem;
+        margin: 0 5vw;
+    }
+    .tutorial-scroll img{
+        width: 80vw;
+        height: 20vh;
+        margin: 0 5vw;
+    }
+    .tutorial-scroll iframe{
+        width: 80vw;
+        height: 45vw;
+        margin: 0 5vw;
+    }
+    .bulking-container{
+        height: 400vh;
+    }
+    .bulking-banner{
+        height: 50vh;
+    }
+    .bulking-banner p{
+        width: 50%;
+        font-size: 3rem;
+    }
+    .bulking-text{
+        height: 15vh; 
+        font-size: 2.5rem;  
+    }
+    .maintain-container{
+        height: 400vh;
+    }
+    .maintain-banner{
+        height: 50vh;
+    }
+    .maintain-banner p{
+        width: 50%;
+        font-size: 3rem;
+    }
+    .maintain-text{
+        height: 15vh; 
+        font-size: 2.5rem;  
+    }
+    .cutting-container{
+        height: 400vh;
+    }
+    .cutting-banner{
+        height: 50vh;
+    }
+    .cutting-banner p{
+        width: 50%;
+        font-size: 3rem;
+    }
+    .cutting-text{
+        height: 15vh; 
+        font-size: 2.5rem;  
+    }
+    .food-container{
+        height: 75vh;
+        flex-direction: column;
+        padding: 2vw;
+    }
+    .left-cutting{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .right-cutting{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .food-container h2{
+        font-size: 1.9rem;
+    }
+    .food-def{
+        font-size: 0.9rem;
+    }
+}
+}
